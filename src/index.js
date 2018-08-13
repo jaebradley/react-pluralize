@@ -1,7 +1,3 @@
-import AnExample from './AnExample/index.jsx';
-import AnotherExample from './AnotherExample/index.jsx';
+import Pluralize from './Pluralize/index.jsx';
 
-export {
-  AnExample,
-  AnotherExample,
-};
+export default Pluralize;

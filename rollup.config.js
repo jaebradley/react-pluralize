@@ -2,43 +2,58 @@ import babel from 'rollup-plugin-babel';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
-import postcss from 'rollup-plugin-postcss';
 import filesize from 'rollup-plugin-filesize';
-import autoprefixer from 'autoprefixer';
 import localResolve from 'rollup-plugin-local-resolve';
 import { terser } from 'rollup-plugin-terser';
 import minify from 'rollup-plugin-babel-minify';
+import { plugin as analyze } from 'rollup-plugin-analyzer';
+import pkg from './package.json';
 
 const config = {
   input: 'src/index.js',
   output: [
     {
-      file: 'build/index.js',
+      file: pkg.browser,
       format: 'umd',
-      name: 'react-pluralize',
-      globals: {
-        react: 'React',
-        'prop-types': 'PropTypes',
-      },
+      name: 'Pluralize',
+      globals: [
+        'react',
+        'react-dom',
+        'pluralize',
+        'prop-types',
+      ],
     },
     {
-      file: 'build/index.cjs.js',
+      file: pkg.main,
       format: 'cjs',
-      name: 'react-pluralize',
+      name: 'Pluralize',
+      globals: [
+        'react',
+        'react-dom',
+        'pluralize',
+        'prop-types',
+      ],
     },
     {
-      file: 'build/index.esm.js',
+      file: pkg.module,
       format: 'es',
+      name: 'Pluralize',
+      globals: [
+        'react',
+        'react-dom',
+        'pluralize',
+        'prop-types',
+      ],
     },
   ],
   external: [
     'react',
     'react-dom',
+    'pluralize',
     'prop-types',
   ],
   plugins: [
     peerDepsExternal(),
-    postcss({ extract: true, plugins: [autoprefixer] }),
     babel({ exclude: 'node_modules/**' }),
     localResolve(),
     resolve(),
@@ -46,6 +61,7 @@ const config = {
     minify(),
     terser(),
     filesize(),
+    analyze(),
   ],
 };
 

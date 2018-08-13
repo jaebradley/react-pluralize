@@ -1,8 +1,14 @@
 {
-  "name": "react-pluralize",
+  "name": "@jaebradley/react-pluralize",
   "version": "0.0.0-development",
   "description": "React component for pluralized strings",
-  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "pluralize"
+  ],
   "homepage": "https://github.com/jaebradley/react-pluralize#readme",
   "bugs": {
     "url": "https://github.com/jaebradley/react-pluralize/issues"
@@ -11,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/jaebradley/react-pluralize.git"
   },
-  "license": "",
+  "license": "MIT",
   "author": {
     "name": "jae.b.bradley@gmail.com"
   },
@@ -20,7 +26,6 @@
   ],
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
-  "style": "build/index.css",
   "scripts": {
     "build": "rollup -c",
     "build:prod": "BABEL_ENV=production npm run build",
@@ -58,7 +63,10 @@
     ]
   },
   "dependencies": {
-    "pluralize": "^7.0.0"
+    "pluralize": "^7.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.54",
@@ -93,12 +101,11 @@
     "jest": "^22.4.3",
     "node-sass": "^4.8.3",
     "postcss": "^6.0.21",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
     "rollup": "^0.58.1",
-    "rollup-plugin-babel": "^4.0.0-beta.4",
+    "rollup-plugin-analyzer": "^2.1.0",
+    "rollup-plugin-babel": "^4.0.0-beta.8",
     "rollup-plugin-babel-minify": "^4.0.0",
+    "rollup-plugin-cleaner": "^0.2.0",
     "rollup-plugin-commonjs": "^9.1.0",
     "rollup-plugin-filesize": "^1.5.0",
     "rollup-plugin-local-resolve": "^1.0.7",
