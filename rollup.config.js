@@ -56,7 +56,12 @@ const config = {
     peerDepsExternal(),
     babel({ exclude: 'node_modules/**' }),
     localResolve(),
-    resolve(),
+    resolve({
+      extensions: [
+        '.js',
+        '.jsx',
+      ],
+    }),
     commonjs(),
     minify(),
     terser(),

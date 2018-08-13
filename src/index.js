@@ -1,3 +1,3 @@
-import Pluralize from './Pluralize/index.jsx';
+import Pluralize from './Pluralize';
 
 export default Pluralize;
