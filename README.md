@@ -8,6 +8,8 @@
 
 A simple `React` component that wraps [the `pluralize` library](https://github.com/blakeembrey/pluralize).
 
+[**Storybook**](https://jaebradley.github.io/react-pluralize)
+
 ## Installation
 
 ```bash

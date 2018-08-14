@@ -25,3 +25,4 @@ jobs:
       if: branch = master
       script:
         - npm run deploy
+        - npm run deploy-storybook-ci
