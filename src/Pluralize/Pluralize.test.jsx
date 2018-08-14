@@ -33,4 +33,16 @@ describe('Pluralize', () => {
       expect(example.text()).toEqual('tests');
     });
   });
+
+  describe('has children', () => {
+    it('has a text child', () => {
+      const example = mount(<Pluralize word="test" count={1}> passes</Pluralize>);
+      expect(example.text()).toEqual('1 test passes');
+    });
+
+    it('has a component child', () => {
+      const example = mount(<Pluralize word="test" count={1}><div>passes</div></Pluralize>);
+      expect(example.html()).toEqual('<div>1 test<div>passes</div></div>');
+    });
+  });
 });

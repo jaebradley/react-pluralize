@@ -8,4 +8,25 @@ storiesOf('Pluralize', module)
   .add('single, do not include counts', () => (<Pluralize word={'component'} count={1} includeCounts={false} />))
   .add('multiple, do not include counts', () => (<Pluralize word={'component'} count={5} includeCounts={false} />))
   .add('single, explicitly include counts', () => (<Pluralize word={'component'} count={1} includeCounts />))
-  .add('multiple, explicitly include counts', () => (<Pluralize word={'component'} count={5} includeCounts />));
+  .add('multiple, explicitly include counts', () => (<Pluralize word={'component'} count={5} includeCounts />))
+  .add('single, with text child', () => (<Pluralize word={'component'} count={1}> included</Pluralize>))
+  .add('multiple, with text child', () => (<Pluralize word={'component'} count={5}> included</Pluralize>))
+  .add('single, with div child', () => (
+    <Pluralize
+      word={'component'}
+      count={1}
+    >
+      <div>
+        blahblahblah
+      </div>
+    </Pluralize>)
+  ).add('multiple, with div child', () => (
+    <Pluralize
+      word={'component'}
+      count={5}
+    >
+      <div>
+        moar blahblahblah
+      </div>
+    </Pluralize>)
+  );
