@@ -42,7 +42,7 @@ import Pluralize from 'react-pluralize';
 </Pluralize>
 ```
 
-![pluralize](https://imgur.com/TcQiF39https://imgur.com/TcQiF39.png)
+![pluralize](https://imgur.com/TcQiF39.png)
 
 ## API
 
