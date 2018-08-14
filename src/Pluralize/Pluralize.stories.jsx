@@ -24,7 +24,6 @@ storiesOf('Pluralize', module)
     <Pluralize
       word={'component'}
       count={5}
-      trailingString={' jaebaebae '}
     >
       <div>
         moar blahblahblah
