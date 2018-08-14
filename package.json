@@ -37,6 +37,7 @@
     "prepare": "npm run build:prod",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
+    "deploy-storybook-ci": "storybook-to-ghpages --ci",
     "test": "BABEL_ENV=test jest",
     "travis-deploy-once": "travis-deploy-once"
   },
@@ -91,6 +92,7 @@
     "@storybook/addon-options": "^3.4.1",
     "@storybook/channels": "^3.4.1",
     "@storybook/react": "^3.4.1",
+    "@storybook/storybook-deployer": "^2.3.0",
     "autoprefixer": "^8.2.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "22.4.3",
