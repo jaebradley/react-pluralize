@@ -9,7 +9,8 @@ const Pluralize = ({
   includeCounts,
   ...other
 }) => (
-  <div {...other} >
+  // eslint-disable-next-line react/jsx-props-no-spreading
+  <div {...other}>
     { pluralize(word, count, includeCounts) }
     { children }
   </div>
