@@ -1,5 +1,4 @@
-[![Greenkeeper badge](https://badges.greenkeeper.io/jaebradley/react-pluralize.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/jaebradley/react-pluralize.svg?branch=master)](https://travis-ci.org/jaebradley/react-pluralize)
+![React Pluralize](https://github.com/jaebradley/react-pluralize/workflows/React%20Pluralize/badge.svg)
 [![codecov](https://codecov.io/gh/jaebradley/react-pluralize/branch/master/graph/badge.svg)](https://codecov.io/gh/jaebradley/react-pluralize)
 [![npm](https://img.shields.io/npm/v/@jaebradley/react-pluralize.svg)](https://www.npmjs.com/package/@jaebradley/react-pluralize)
 [![npm](https://img.shields.io/npm/dt/@jaebradley/react-pluralize.svg)](https://www.npmjs.com/package/@jaeradley/react-pluralize)
