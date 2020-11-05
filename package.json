@@ -71,8 +71,8 @@
   "dependencies": {
     "pluralize": "^8.0.0",
     "prop-types": "^15.6.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
