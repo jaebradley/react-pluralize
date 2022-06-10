@@ -123,7 +123,7 @@
     "rollup-plugin-postcss": "^3.1.2",
     "rollup-plugin-terser": "^6.1.0",
     "sass-loader": "^8.0.2",
-    "semantic-release": "^17.0.8",
+    "semantic-release": "^19.0.3",
     "source-map-loader": "^1.0.0",
     "travis-deploy-once": "^5.0.11",
     "webpack": "^4.43.0",
